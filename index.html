@@ -35,10 +35,33 @@
     .profile-text {
       flex: 1;
     }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      padding: 1em;
+      background-color: #f0f0f0;
+      margin-bottom: 2em;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #007acc;
+    }
   </style>
 </head>
 <body>
-  <div class="profile">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="profile" id="about">
     <img src="2451038.JPG" alt="Li-Chen Yu">
     <div class="profile-text">
       <h1>Li-Chen Yu</h1>
@@ -48,7 +71,7 @@
 
   <p>Li-Chen Yu is an undergraduate student in Electrical Engineering at National Taipei University of Technology, Taiwan, expected to graduate in 2025. He was a finalist and third-place winner in the 2024 IEEE International Future Energy Challenge (IFEC).</p>
 
-  <h2>Research Interests</h2>
+  <h2 id="research">Research Interests</h2>
   <ul>
     <li>Power Electronics</li>
     <li>Resonant Converters</li>
@@ -58,4 +81,3 @@
 
 </body>
 </html>
-<!-- Trigger rebuild -->
